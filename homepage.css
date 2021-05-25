@@ -382,8 +382,8 @@ p {
 /* FOOTER SECTION */
 
 .footer {
-    padding: 80px 0 100px;
-    background-color: purple;
+    padding: 80px 0 150px;
+    background: #04004D;
     color: #FFFFFF;
 }
 
@@ -393,6 +393,7 @@ p {
 
 .footer-wrapper {
     display: flex;
+    padding-bottom: 50px;
 }
 
 .footer-content-1 {
@@ -401,10 +402,10 @@ p {
 
 .footer-content-1>h4 {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 29px;
     text-transform: none;
-    width: 315px;
+    width: 305px;
 }
 
 .footer-social-icon {
@@ -413,6 +414,36 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.footer-social-icon>a img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.footer-social-icon>a:nth-child(2) img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.5s;
+}
+
+.footer-social-icon>a:nth-child(3) img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+.footer-social-icon>a img:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s;
 }
 
 .footer-content-2,
@@ -432,14 +463,14 @@ p {
 .footer-content-2>h4,
 .footer-content-3>h4 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
 }
 
 .footer-content-2>li,
 .footer-content-3>li {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 46px;
     color: #FFFFFF;
     text-transform: none;
@@ -457,17 +488,17 @@ p {
 
 .footer-content-4>li {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 29px;
     color: #FFFFFF;
     text-transform: none;
-    width: 315px;
+    width: 310px;
 }
 
 .footer-form-wrapper {
     display: flex;
     flex-direction: row;
-    width: 300px;
+    width: 260px;
     justify-content: center;
     align-items: center;
 }
@@ -507,7 +538,7 @@ p {
     background: #FFFFFF;
     border-radius: 8px;
     height: 50px;
-    margin: 0 0 0 10px;
+    margin: 0 10px 0 10px;
     width: 100%;
     border: none;
     caret-color: #000;
@@ -516,6 +547,28 @@ p {
 .footer-form>input:active,
 .footer-form>input:focus {
     outline: none;
+}
+
+.footer-others {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ffffffbd;
+    padding-top: 50px;
+}
+
+.footer-others>h4 {
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 685px;
+    text-transform: none;
+}
+
+.footer-download {
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 10px;
 }
 
 
