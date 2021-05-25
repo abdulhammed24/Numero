@@ -65,6 +65,10 @@ h4 {
     margin: 12px 0;
 }
 
+li {
+    font-size: 20px;
+}
+
 p {
     font-size: 16px;
     margin: 8px 0;
@@ -89,6 +93,9 @@ p {
         margin: 16px 0;
     }
     h4 {
+        font-size: 20px;
+    }
+    li {
         font-size: 18px;
     }
 }
@@ -100,7 +107,7 @@ p {
     position: absolute;
     margin: 0 auto;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
     z-index: 5;
 }
 
@@ -168,8 +175,19 @@ p {
     .navbar-brand {
         padding: 0 20px;
     }
-    .navbar-expand-lg .navbar-nav {
-        align-items: flex-start;
+    .navbar-download {
+        background: #F8F8F8;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 22px;
+        color: #fff;
+    }
+    .navbar-dark .navbar-nav .nav-link:active,
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #fff;
     }
     .header-container {
         max-width: 80rem;
@@ -178,10 +196,11 @@ p {
     .navbar-expand-lg .navbar-nav {
         background: transparent;
         border-radius: 0;
-        height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
     .navbar-expand-lg .navbar-collapse {
-        background-color: #FBF7FD;
+        background-color: #04004D;
         margin-top: 20px;
     }
     .navbar-app-wrapper2 {
@@ -213,7 +232,7 @@ p {
         transition: all 0.2s;
     }
     .navbar-dark .navbar-toggler .icon-bar {
-        background: #582d86;
+        background: #04004D;
     }
     .navbar-toggler .icon-bar:nth-of-type(1) {
         transform: rotate(45deg);
@@ -390,6 +409,7 @@ p {
 
 .footer-img {
     height: 21px;
+    margin-bottom:20px;
 }
 
 .footer-wrapper {
@@ -406,7 +426,7 @@ p {
     font-size: 20px;
     line-height: 29px;
     text-transform: none;
-    width: 305px;
+    max-width: 305px;
 }
 
 .footer-social-icon {
@@ -454,12 +474,12 @@ p {
 }
 
 .footer-content-2 {
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-right: 0.5px solid #fff;
+    border-left: 0.5px solid #fff;
 }
 
 .footer-content-3 {
-    border-right: 1px solid #fff;
+    border-right: 0.5px solid #fff;
 }
 
 .footer-content-2>h4,
@@ -472,7 +492,6 @@ p {
 .footer-content-2>li,
 .footer-content-3>li {
     font-weight: normal;
-    font-size: 20px;
     line-height: 46px;
     color: #FFFFFF;
     text-transform: none;
@@ -489,8 +508,6 @@ p {
 }
 
 .footer-content-4>li {
-    font-weight: normal;
-    font-size: 20px;
     line-height: 29px;
     color: #FFFFFF;
     text-transform: none;
@@ -570,7 +587,7 @@ p {
     background: #F8F8F8;
     border-radius: 10px;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 @media all and (max-width:1200px) {
@@ -616,8 +633,15 @@ p {
 }
 
 @media all and (max-width:576px) {
+    .footer {
+        padding: 80px 0;
+    }
     .footer-wrapper {
         grid-template-columns: 1fr;
+    }
+    .footer-content-1>h4,
+    .footer-others>h4 {
+        font-size: 18px;
     }
 }
 
