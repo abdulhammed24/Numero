@@ -399,6 +399,72 @@ p {
 }
 
 
+/* BUSINESS BANKING SECTION */
+
+.banking {
+    padding: 80px 0;
+}
+
+.banking-wrapper {
+    text-align: center;
+}
+
+.banking-wrapper>h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    text-transform: none;
+}
+
+.banking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.banking-content {
+    width: 300px;
+    background: #FFFFFF;
+    transition: 0.5s ease;
+}
+
+.banking-content-1 {
+    box-shadow: 0px 24px 64px rgb(0 0 0 / 11%);
+    border-radius: 10px;
+}
+
+.banking-content-2:hover,
+.banking-content-3:hover {
+    box-shadow: 0px 24px 64px rgb(0 0 0 / 11%);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.banking-content>h4 {
+    font-family: TT Commons;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    color: #04004D;
+}
+
+.banking-content>p {
+    font-family: TT Commons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145.6%;
+    text-align: center;
+    color: #606060;
+    padding: 0 30px 30px;
+}
+
+
+/* BUSINESS BANKING SECTION */
+
+
 /* REGISTER SECTION */
 
 .register {
@@ -472,11 +538,11 @@ p {
     transition: 0.4s;
 }
 
-@media all and (max-width:991px){
+@media all and (max-width:991px) {
     .register-wrapper {
         display: grid;
         grid-gap: 50px;
-        justify-content: center; 
+        justify-content: normal;
         align-items: center;
     }
     .register-wrapper>img {
@@ -484,6 +550,11 @@ p {
         display: none;
     }
 }
+
+
+/* REGISTER SECTION */
+
+
 /* BUSINESS SECTION */
 
 .business {
