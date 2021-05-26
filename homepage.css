@@ -385,112 +385,112 @@
             padding: 0 10px;
         }
     }
-    /* ACCOUNT NUMBER SECTION */
+    /* OPTION SECTION */
     
-    .account {
+    .option {
         margin: 400px 0 0;
         padding: 80px 0;
         color: #fff;
     }
     
-    .account-wrapper {
+    .option-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 100px;
     }
     
-    .account-content {
+    .option-content {
         padding: 50px 0;
     }
     
-    .account-content-1 {
+    .option-content-1 {
         background: #fff;
     }
     
-    .account-content-2 {
+    .option-content-2 {
         background: #F9FAFC;
     }
     
-    .account-content-3 {
+    .option-content-3 {
         background: url(img/Rectangle\ 811.png) no-repeat center center;
         background-size: cover;
-        height: 750px;
         padding: 150px 0;
     }
     
-    .account-wrapper-1>.account-text h4,
-    .account-wrapper-2>.account-text h4 {
+    .option-wrapper-1>.option-text h4,
+    .option-wrapper-2>.option-text h4 {
         font-weight: 600;
         font-size: 38px;
-        line-height: 50px;
         color: #04004D;
         max-width: 350px;
     }
     
-    .account-wrapper-3>.account-text h4 {
+    .option-wrapper-3>.option-text h4 {
         font-weight: 600;
         font-size: 38px;
-        line-height: 50px;
         color: #fff;
         max-width: 450px;
     }
     
-    .account-wrapper-1>.account-text p,
-    .account-wrapper-2>.account-text p {
+    .option-wrapper-1>.option-text p,
+    .option-wrapper-2>.option-text p {
         font-size: 20px;
         line-height: 29px;
         color: #606060;
         max-width: 420px
     }
     
-    .account-wrapper-3>.account-text p {
+    .option-wrapper-3>.option-text p {
         font-size: 20px;
         line-height: 29px;
         color: #FFFFFF;
         max-width: 350px
     }
     
-    .account-text>img {
+    .option-text>img {
         height: 60px;
         width: 60px;
         margin-bottom: 20px;
     }
     
-    .account-text {
+    .option-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     
     @media all and (max-width:991px) {
-        .account-wrapper {
+        .option-wrapper {
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 30px;
         }
-        .account-wrapper>img {
+        .option-wrapper>img {
             order: 2;
         }
     }
     
     @media all and (max-width:768px) {
-        .account {
+        .option {
             margin: 300px 0 0;
         }
     }
     
     @media all and (max-width:576px) {
-        .account {
+        .option {
             margin: 50px 0 0;
+        }
+        .option-wrapper>.option-text h4 {
+            font-size: 32px;
         }
     }
     
     @media all and (max-width:420px) {
-        .account {
+        .option {
             margin: 0;
         }
     }
-    /* ACCOUNT NUMBER SECTION */
+    /* OPTION SECTION */
     /* BUSINESS BANKING SECTION */
     
     .banking {
@@ -504,7 +504,6 @@
     .banking-wrapper>h2 {
         font-weight: 600;
         font-size: 50px;
-        line-height: 50px;
         color: #000000;
         text-transform: none;
     }
@@ -540,32 +539,35 @@
     .banking-content>h4 {
         font-style: normal;
         font-weight: 600;
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 28px;
         color: #04004D;
+        margin-top: 30px;
     }
     
     .banking-content>p {
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 145.6%;
         text-align: center;
         color: #606060;
-        padding: 0 30px 30px;
+        padding: 0px 65px 30px;
     }
     
     @media all and (max-width:991px) {
         .banking-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
+        }
+        .banking-content {
+            box-shadow: 0px 24px 64px rgb(0 0 0 / 11%);
+            border-radius: 10px;
         }
     }
     
     @media all and (max-width:576px) {
-        .banking-container {
-            display: grid;
-            grid-template-columns: 1fr;
+        .banking-wrapper>h2 {
+            font-size: 30px;
         }
     }
     /* BUSINESS BANKING SECTION */
@@ -587,7 +589,6 @@
     .register-text>h4 {
         font-weight: 600;
         font-size: 40px;
-        line-height: 50px;
     }
     
     .register-option {
@@ -654,6 +655,12 @@
             display: none;
         }
     }
+    
+    @media all and (max-width:576px) {
+        .register-text>h4 {
+            font-size: 30px;
+        }
+    }
     /* REGISTER SECTION */
     /* BUSINESS SECTION */
     
@@ -669,22 +676,71 @@
     .business-wrapper>h2 {
         font-weight: 600;
         font-size: 50px;
-        line-height: 50px;
         color: #000000;
         text-transform: none;
     }
     
-    .business-image>img {
+    .business-image {
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .business-img {
         background: #FFFFFF;
         border-radius: 20px;
-        height: 85px;
-        padding: 20px 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .business-img-1,
+    .business-img-2,
+    .business-img-3 {
+        margin-right: 30px;
+    }
+    
+    .business-img-1 {
+        padding: 32px 50px;
+        height: 100%;
+        width: 200px;
+    }
+    
+    .business-img-2 {
+        padding: 14px 75px;
+        height: 100%;
+        width: 250px;
+    }
+    
+    .business-img-3 {
+        padding: 30px 50px;
+        height: 100%;
+        width: 200px;
+    }
+    
+    .business-img-4 {
+        padding: 18px 70px;
+        height: 100%;
+        width: 250px;
     }
     
     @media all and (max-width:576px) {
         .business-wrapper>h2 {
             font-size: 30px;
-            line-height: 30px;
+        }
+    }
+    
+    @media all and (max-width:519px) {
+        .business-img-1,
+        .business-img-2,
+        .business-img-3,
+        .business-img-4 {
+            width: auto;
+        }
+        .business-img-1,
+        .business-img-2,
+        .business-img-3 {
+            margin-right: 0;
         }
     }
     /* BUSINESS SECTION */
@@ -701,7 +757,6 @@
     .switch-wrapper>h2 {
         font-weight: 600;
         font-size: 50px;
-        line-height: 50px;
         color: #000000;
         text-transform: none;
     }
