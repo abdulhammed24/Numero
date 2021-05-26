@@ -325,7 +325,7 @@
         border: 1px solid #48258D;
         box-sizing: border-box;
         border-radius: 9px;
-        padding: 12px 30px;
+        padding: 20px 50px;
         margin: 20px 0;
         transition: 0.4s;
     }
@@ -369,22 +369,6 @@
         }
     }
     /* HERO SECTION */
-    
-    @media all and (max-width: 991px) {
-        .section-container {
-            padding: 0 100px;
-            max-width: 1240px;
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-    
-    @media all and (max-width: 768px) {
-        .section-container {
-            max-width: 80rem;
-            padding: 0 10px;
-        }
-    }
     /* OPTION SECTION */
     
     .option {
@@ -796,7 +780,7 @@
     }
     
     .footer-img {
-        height: 21px;
+        height: 30px;
         margin-bottom: 20px;
     }
     
@@ -811,7 +795,7 @@
     
     .footer-content-1>h4 {
         font-weight: normal;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 29px;
         text-transform: none;
         max-width: 305px;
@@ -879,6 +863,7 @@
     
     .footer-content-2>li,
     .footer-content-3>li {
+        font-size: 18px;
         font-weight: normal;
         line-height: 46px;
         color: #FFFFFF;
@@ -896,10 +881,11 @@
     }
     
     .footer-content-4>li {
+        font-size: 18px;
         line-height: 29px;
         color: #FFFFFF;
         text-transform: none;
-        width: 310px;
+        max-width: 280px;
     }
     
     .footer-form-wrapper {
@@ -964,10 +950,10 @@
     }
     
     .footer-others>h4 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 29px;
         color: #FFFFFF;
-        width: 685px;
+        max-width: 613px;
         text-transform: none;
     }
     
@@ -1033,3 +1019,19 @@
         }
     }
     /* FOOTER SECTION */
+    
+    @media all and (max-width: 991px) {
+        .section-container {
+            padding: 0 100px;
+            max-width: 1240px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media all and (max-width: 768px) {
+        .section-container {
+            max-width: 80rem;
+            padding: 0 10px;
+        }
+    }
