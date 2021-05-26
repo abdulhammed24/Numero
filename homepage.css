@@ -631,7 +631,7 @@
         .register-wrapper {
             display: grid;
             grid-gap: 50px;
-            justify-content: normal;
+            justify-content: center;
             align-items: center;
         }
         .register-wrapper>img {

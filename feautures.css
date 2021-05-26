@@ -312,7 +312,7 @@
                     
                     @media all and (max-width:991px) {
                         .hero {
-                            padding: 150px 0 300px;
+                            padding: 150px 0;
                         }
                     }
                     
@@ -322,6 +322,7 @@
                         }
                         .hero-text>h4 {
                             width: 100%;
+                            font-size: 28px;
                         }
                     }
                     /* HERO SECTION */
@@ -397,6 +398,10 @@
                     .option-content>span,
                     .option-other-content>span {
                         margin-left: 10px;
+                        margin-left: 10px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #04004D;
                     }
                     
                     @media all and (max-width:991px) {
