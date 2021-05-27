@@ -420,14 +420,24 @@ p {
 @media all and (max-width:991px) {
     .what {
         padding: 80px 0;
+        height: 100%;
+    }
+    .what-container>img {
+        display: none;
     }
     .what-content {
         padding: 40px;
-        min-height: 400px;
         height: 100%;
+        position: unset;
     }
     .what-content>h4 {
         font-size: 28px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .workspace-img {
+        display: none;
     }
 }
 
@@ -540,6 +550,12 @@ p {
 @media all and (max-width:991px) {
     .who-text>h4 {
         font-size: 28px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .who {
+        padding: 0px 0 80px;
     }
 }
 
