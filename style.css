@@ -1,6 +1,6 @@
 *,
- ::after,
- ::before {
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,7 +39,6 @@ h3,
 h4 {
     letter-spacing: normal;
     line-height: normal;
-    text-transform: capitalize;
     font-family: 'TT Commons', sans-serif;
     font-weight: 400;
 }
@@ -65,13 +64,17 @@ h4 {
     margin: 12px 0;
 }
 
+li {
+    font-size: 20px;
+}
+
 p {
     font-size: 16px;
     margin: 8px 0;
 }
 
 .section-container {
-    max-width: 1240px;
+    max-width: 1400px;
     padding: 0 50px;
     margin: 0 auto;
 }
@@ -89,6 +92,9 @@ p {
         margin: 16px 0;
     }
     h4 {
+        font-size: 20px;
+    }
+    li {
         font-size: 18px;
     }
 }
@@ -110,7 +116,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1400px;
     padding: 0 50px;
     margin: 0 auto;
 }

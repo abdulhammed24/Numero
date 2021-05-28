@@ -297,7 +297,7 @@ p {
 .hero {
     background: url(img/Rectangle\ Copy\ 92.png) no-repeat center center;
     background-size: cover;
-    padding: 180px;
+    padding: 100px;
     border-radius: 20px;
 }
 
@@ -305,7 +305,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 80px 0 0;
 }
 
 .hero-title {
@@ -338,6 +337,19 @@ p {
     max-width: 500px;
 }
 
+@media all and (max-width:991px) {
+    .hero {
+        padding: 80px;
+    }
+    .hero-text>h4 {
+        font-size: 28px;
+        max-width: 100%;
+    }
+    .hero-text>p {
+        max-width: 100%;
+    }
+}
+
 
 /* HERO SECTION */
 
@@ -356,14 +368,13 @@ p {
 .detail-text>h6 {
     font-size: 28px;
     line-height: 45px;
-    text-align: justify;
 }
 
 .detail-text>p {
     color: #A8A8A8;
     margin: 0 80px;
     padding-bottom: 60px;
-    width: 1082px;
+    max-width: 1082px;
 }
 
 .detail-text>h5 {
@@ -376,8 +387,63 @@ p {
     color: #04004D;
     background: #F5F2FD;
     border-radius: 20px;
-    margin: 0 40px;
+    margin: 0 40px 20px;
     padding: 40px;
+}
+
+.detail-social {
+    padding: 50px 0;
+}
+
+.detail-social-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 395px;
+    margin: 0 auto;
+    background: #F9FAFC;
+    border-radius: 20px;
+    padding: 25px 35px;
+}
+
+.detail-social-content>p {
+    font-size: 20px;
+    color: #04004D;
+    margin-right: 20px;
+}
+
+.detail-social-content>a:nth-child(2) img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+.detail-social-content>a:nth-child(3) img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+.detail-social-content>a:nth-child(4) img {
+    background: #030035;
+    border: 1px solid #030035;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+@media all and (max-width:991px) {
+    .detail-text>p,
+    .detail-text>h5,
+    .detail-text>h6 {
+        font-size: 20px;
+    }
 }
 
 
@@ -388,7 +454,6 @@ p {
 
 .blog {
     padding: 80px 0;
-    margin: 30px 0 0;
 }
 
 .blog-title {
@@ -410,7 +475,7 @@ p {
 .blog-text {
     text-align: center;
     border-top: 3px solid #F2F4F9;
-    padding: 80px 0;
+    padding: 80px 0 100px;
 }
 
 .blog-text>h4 {

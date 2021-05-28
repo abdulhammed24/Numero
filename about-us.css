@@ -74,7 +74,7 @@ p {
 }
 
 .section-container {
-    max-width: 1240px;
+    max-width: 1400px;
     padding: 0 50px;
     margin: 0 auto;
 }
@@ -116,7 +116,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1400px;
     padding: 0 50px;
     margin: 0 auto;
 }
