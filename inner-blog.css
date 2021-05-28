@@ -295,7 +295,7 @@ p {
 /* HERO SECTION */
 
 .hero {
-    background: url(img/Rectangle\ Copy\ 90.png) no-repeat center center;
+    background: url(img/Rectangle\ Copy\ 92.png) no-repeat center center;
     background-size: cover;
     padding: 180px;
     border-radius: 20px;
@@ -405,6 +405,25 @@ p {
 
 .blog-title>span {
     margin-right: 9px;
+}
+
+.blog-text {
+    text-align: center;
+    border-top: 3px solid #F2F4F9;
+    padding: 80px 0;
+}
+
+.blog-text>h4 {
+    font-weight: bold;
+    font-size: 42px;
+    color: #04004D;
+}
+
+.blog-text>p {
+    font-size: 20px;
+    color: #606060;
+    width: 490px;
+    margin: 0 auto;
 }
 
 .blog-text-2>h4 {
