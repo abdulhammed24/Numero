@@ -463,12 +463,111 @@
                             width: 500px;
                         }
                         /* PROCESS SECTION  */
+                        /* COMPANY SECTION */
+                        
+                        .company {
+                            padding: 80px 0;
+                        }
+                        
+                        .company-wrapper {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                        }
+                        
+                        .company-wrapper>img {
+                            align-self: center;
+                            justify-self: center;
+                            height: 100%;
+                        }
+                        
+                        .company-content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background: #FFFFFF;
+                            padding: 0 80px;
+                            border-radius: 10px;
+                        }
+                        
+                        .company-content>img {
+                            width: 95px;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .company-content>h4 {
+                            font-weight: 600;
+                            font-size: 42px;
+                            color: #04004D;
+                            margin: 0 0 15px;
+                            width: 375px;
+                        }
+                        
+                        .company-content>p {
+                            font-size: 20px;
+                            color: #606060;
+                            margin: 0 0 15px;
+                            width: 510px;
+                        }
+                        
+                        .company-other {
+                            background: #F9FAFC;
+                            border-radius: 10px;
+                            padding: 50px;
+                            margin-top: 30px;
+                        }
+                        
+                        .company-other-content {
+                            max-width: 420px;
+                            margin: 0 0 30px;
+                            padding: 10px 15px;
+                            display: flex;
+                            align-items: center;
+                            background: #FFFFFF;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+                            border-radius: 10px
+                        }
+                        
+                        .company-other-content>img {
+                            align-self: flex-start;
+                        }
+                        
+                        .company-other-content>span {
+                            max-width: 400px;
+                            margin-left: 10px;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #04004D;
+                        }
+                        
+                        @media all and (max-width:991px) {
+                            .company-content {
+                                padding: 50px 20px;
+                            }
+                        }
+                        
+                        @media all and (max-width:768px) {
+                            .company-wrapper {
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                grid-gap: 50px;
+                            }
+                            .company-content>h4,
+                            .company-content>p,
+                            .company-other-content {
+                                max-width: 100%;
+                            }
+                        }
+                        /* COMPANY SECTION */
                         /* FOOTER SECTION */
                         
                         .footer {
                             padding: 80px 0 150px;
-                            background: #04004D;
+                            background-image: url(img/footer-inner-bg.png);
+                            background-position: center;
+                            background-size: cover;
                             color: #FFFFFF;
+                            background-color: #04004D;
                         }
                         
                         .footer-img {

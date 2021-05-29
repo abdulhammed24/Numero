@@ -715,8 +715,11 @@ p {
 
 .footer {
     padding: 80px 0 150px;
-    background: #04004D;
+    background-image: url(img/footer-inner-bg.png);
+    background-position: center;
+    background-size: cover;
     color: #FFFFFF;
+    background-color: #04004D;
 }
 
 .footer-img {
