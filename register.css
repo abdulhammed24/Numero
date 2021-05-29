@@ -420,16 +420,42 @@
                         
                         .process {
                             padding: 0 0 80px;
+                            position: relative;
+                            height: 1000px;
                         }
                         
                         .process-wrapper {
-                            margin: 0 0 0 100px;
+                            margin: 0 0px 0 50px;
+                        }
+                        
+                        .process-other {
+                            background: #F9FAFC;
+                            border-radius: 20px;
+                            position: absolute;
+                            bottom: 25px;
+                        }
+                        
+                        .process-wrapper-2 {
+                            margin: 0 0 0 50px;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: 20px;
+                            padding: 80px 0 80px 0;
                         }
                         
                         .process-content {
                             display: flex;
                             justify-content: space-between;
-                            gap: 50px;
+                            background: #FFFFFF;
+                        }
+                        
+                        .process-content-2 {
+                            display: flex;
+                            justify-content: space-between;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 24px 10px rgb(0 0 0 / 5%);
+                            border-radius: 10px;
+                            padding: 25px 30px;
                         }
                         
                         .process-content>img {
@@ -443,6 +469,23 @@
                             flex-direction: column;
                             justify-content: center;
                             align-items: baseline;
+                        }
+                        
+                        .process-text-2 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: baseline;
+                        }
+                        
+                        .process-text-2>p {
+                            font-size: 25px;
+                            color: #000000;
+                            margin: 20px 0 0;
+                        }
+                        
+                        .process-text-2>p:nth-child(3) {
+                            color: #6d3cc8;
+                            margin: 30px 0;
                         }
                         
                         .process-text>img {
@@ -463,10 +506,68 @@
                             width: 500px;
                         }
                         /* PROCESS SECTION  */
+                        /* WHY SECTION */
+                        
+                        .why {
+                            padding: 80px 0;
+                        }
+                        
+                        .why-header {
+                            text-align: center;
+                        }
+                        
+                        .why-header>h4 {
+                            font-weight: bold;
+                            font-size: 42px;
+                            color: #04004D;
+                        }
+                        
+                        .why-header>p {
+                            font-size: 20px;
+                            color: #606060;
+                            width: 580px;
+                            margin: 0 auto;
+                        }
+                        
+                        .why-content {
+                            background: #F9FAFC;
+                            border-radius: 20px;
+                            width: 970px;
+                            margin: 30px auto 0;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 20px 30px;
+                            padding: 55px 90px;
+                        }
+                        
+                        .why-other-content {
+                            padding: 10px 15px;
+                            display: flex;
+                            align-items: center;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 24px rgb(0 0 0 / 5%);
+                            border-radius: 10px;
+                        }
+                        
+                        .why-other-content>span {
+                            width: 245px;
+                            height: 60px;
+                            line-height: 1.7;
+                            margin-left: 10px;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #04004D;
+                        }
+                        
+                        .why-other-content>img {
+                            align-self: flex-start;
+                        }
+                        /* WHY SECTION */
                         /* COMPANY SECTION */
                         
                         .company {
                             padding: 80px 0;
+                            margin: 100px 0 0;
                         }
                         
                         .company-wrapper {
@@ -489,12 +590,11 @@
                             border-radius: 10px;
                         }
                         
-                        .company-content>img {
-                            width: 95px;
+                        .company-text>img {
                             margin-bottom: 50px;
                         }
                         
-                        .company-content>h4 {
+                        .company-text>h4 {
                             font-weight: 600;
                             font-size: 42px;
                             color: #04004D;
@@ -502,7 +602,7 @@
                             width: 375px;
                         }
                         
-                        .company-content>p {
+                        .company-text>p {
                             font-size: 20px;
                             color: #606060;
                             margin: 0 0 15px;
@@ -552,8 +652,8 @@
                                 grid-template-columns: 1fr;
                                 grid-gap: 50px;
                             }
-                            .company-content>h4,
-                            .company-content>p,
+                            .company-text>h4,
+                            .company-text>p,
                             .company-other-content {
                                 max-width: 100%;
                             }
