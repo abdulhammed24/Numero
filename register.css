@@ -432,7 +432,8 @@
                             background: #F9FAFC;
                             border-radius: 20px;
                             position: absolute;
-                            bottom: 25px;
+                            bottom: -10px;
+                            width: 100%;
                         }
                         
                         .process-wrapper-2 {
@@ -444,9 +445,8 @@
                         }
                         
                         .process-content {
-                            display: flex;
-                            justify-content: space-between;
-                            background: #FFFFFF;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
                         }
                         
                         .process-content-2 {
@@ -495,7 +495,6 @@
                         .process-text>h4 {
                             font-weight: bold;
                             font-size: 42px;
-                            line-height: 50px;
                             color: #04004D;
                             max-width: 500px;
                         }
@@ -505,11 +504,55 @@
                             color: #606060;
                             width: 500px;
                         }
+                        
+                        @media all and (max-width:1240px) {
+                            .process-wrapper {
+                                margin: 0;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .process-other {
+                                position: unset;
+                                bottom: 0;
+                            }
+                            .process {
+                                padding: 0 0 80px;
+                                position: unset;
+                                height: 100%;
+                            }
+                            .process-content {
+                                gap: 20px;
+                            }
+                            .process-text>h4,
+                            .process-text>p {
+                                width: 100%;
+                            }
+                        }
+                        
+                        @media all and (max-width:991px) {
+                            .process-text>h4 {
+                                font-size: 30px;
+                            }
+                            .process-wrapper-2 {
+                                margin: 0;
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                padding: 80px 0 80px 0;
+                            }
+                        }
+                        
+                        @media all and (max-width:576px) {
+                            .process-content {
+                                display: grid;
+                                grid-template-columns: 1fr;
+                            }
+                        }
                         /* PROCESS SECTION  */
                         /* WHY SECTION */
                         
                         .why {
                             padding: 80px 0;
+                            position: relative;
                         }
                         
                         .why-header {
@@ -525,7 +568,7 @@
                         .why-header>p {
                             font-size: 20px;
                             color: #606060;
-                            width: 580px;
+                            max-width: 580px;
                             margin: 0 auto;
                         }
                         
@@ -561,6 +604,48 @@
                         
                         .why-other-content>img {
                             align-self: flex-start;
+                        }
+                        
+                        .why>img {
+                            position: absolute;
+                            bottom: -60px;
+                            z-index: -1;
+                            width: 100%;
+                        }
+                        
+                        @media all and (max-width:1240px) {
+                            .why-content {
+                                background: #F9FAFC;
+                                border-radius: 20px;
+                                width: 100%;
+                                margin: 30px auto 0;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 20px 30px;
+                                padding: 55px 90px;
+                            }
+                        }
+                        
+                        @media all and (max-width:991px) {
+                            .why {
+                                padding: 0 0 80px;
+                            }
+                            .why-content {
+                                background: #F9FAFC;
+                                border-radius: 20px;
+                                width: 100%;
+                                margin: 30px auto 0;
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                gap: 20px 30px;
+                                padding: 50px;
+                            }
+                            .why>img {
+                                display: none;
+                            }
+                            .why-other-content>span {
+                                width: 100%;
+                            }
                         }
                         /* WHY SECTION */
                         /* COMPANY SECTION */
@@ -617,7 +702,7 @@
                         }
                         
                         .company-other-content {
-                            max-width: 420px;
+                            width: 420px;
                             margin: 0 0 30px;
                             padding: 10px 15px;
                             display: flex;
@@ -640,9 +725,37 @@
                             color: #04004D;
                         }
                         
-                        @media all and (max-width:991px) {
+                        @media all and (max-width:1240px) {
                             .company-content {
-                                padding: 50px 20px;
+                                padding: 0;
+                            }
+                            .company-wrapper {
+                                gap: 20px;
+                            }
+                        }
+                        
+                        @media all and (max-width:991px) {
+                            .company-text>h4 {
+                                font-size: 30px;
+                                color: #04004D;
+                                margin: 0 0 15px;
+                            }
+                            .company-other {
+                                padding: 25px;
+                            }
+                            .company-text>h4,
+                            .company-text>p,
+                            .company-other-content {
+                                width: 100%;
+                            }
+                            .company-text>p {
+                                font-size: 20px;
+                                color: #606060;
+                                margin: 0 0 15px;
+                            }
+                            .company {
+                                padding: 0 0 80px;
+                                margin: 0;
                             }
                         }
                         
@@ -650,12 +763,6 @@
                             .company-wrapper {
                                 display: grid;
                                 grid-template-columns: 1fr;
-                                grid-gap: 50px;
-                            }
-                            .company-text>h4,
-                            .company-text>p,
-                            .company-other-content {
-                                max-width: 100%;
                             }
                         }
                         /* COMPANY SECTION */
