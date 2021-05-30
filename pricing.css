@@ -289,6 +289,8 @@ p {
     background-size: cover;
     font-family: 'TT Commons', sans-serif;
     padding: 150px 0 80px;
+    height: 650px;
+    position: relative;
 }
 
 .hero-text {
@@ -307,95 +309,10 @@ p {
     color: #04004D;
 }
 
-.hero-wrapper {
-    background: #FFFFFF;
-    border-radius: 25px;
-    padding: 40px 80px 40px 60px;
-    width: 950px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    position: relative;
-    height: 470px;
-}
-
-.hero-detail-1 {
-    background: #6D3CC8;
-    border-radius: 20px;
-    padding: 60px 25px;
-    text-align: center;
-    position: absolute;
-    width: 250px;
-    margin: 0 auto 0 60px;
-    left: 0;
-}
-
-.hero-detail-1>h4 {
-    font-family: 'Graphik', sans-serif;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-.hero-detail-1>h1 {
-    font-size: 48px;
-    color: #FFFFFF;
-}
-
-.hero-detail-1>p {
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-.hero-btn {
-    background: #F9FAFC;
-    border: 1px solid #E0E6ED;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 15px;
-    letter-spacing: 0.06em;
-    color: #483DA9;
-    padding: 18px 36px;
-}
-
-.hero-detail-2 {
-    position: absolute;
-    right: 0;
-    top: 40px;
-    margin: 40px 80px 0 auto;
-    width: 500px;
-}
-
-.hero-detail-2>h4 {
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #9DA8B6;
-    background: #F9FAFC;
-    border-radius: 5px;
-    padding: 22px 25px;
-    margin-bottom: 30px;
-}
-
-.hero-content {
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #575A65;
-    margin-bottom: 36px;
-}
-
-.hero-content>span {
-    width: 330px;
-}
-
-.hero-content>img {
-    margin-right: 30px;
-}
-
-@media all and (max-width:576px) {
+@media all and (max-width:991px) {
+    .hero {
+        height: 100%;
+    }
     .hero-text>h1 {
         font-size: 38px;
     }
@@ -408,11 +325,149 @@ p {
 /* HERO SECTION */
 
 
+/* DETAIL SECTION */
+
+.detail {
+    padding: 80px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 335px;
+}
+
+.detail-wrapper {
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 40px 80px 40px 60px;
+    width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    position: relative;
+    height: 470px;
+}
+
+.detail-1 {
+    background: #6D3CC8;
+    border-radius: 20px;
+    padding: 60px 25px;
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 455px;
+    margin: 0 auto 0 60px;
+    left: 0;
+    top: -80px;
+}
+
+.detail-2 {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin: 0 80px 0 auto;
+    width: 500px;
+}
+
+.detail-1>h4 {
+    font-family: 'Graphik', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.detail-1>h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.detail-1>p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.detail-btn {
+    background: #F9FAFC;
+    border: 1px solid #E0E6ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #483DA9;
+    padding: 18px 36px;
+}
+
+.detail-2>h4 {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #9DA8B6;
+    background: #F9FAFC;
+    border-radius: 5px;
+    padding: 22px 25px;
+    margin-bottom: 30px;
+}
+
+.detail-content {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #575A65;
+    margin-bottom: 36px;
+}
+
+.detail-content>span {
+    width: 330px;
+}
+
+.detail-content>img {
+    margin-right: 30px;
+}
+
+@media all and (max-width:991px) {
+    .detail {
+        position: unset;
+    }
+    .detail-wrapper {
+        background: #FFFFFF;
+        border-radius: 25px;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        height: auto;
+    }
+    .detail-1 {
+        background: #6D3CC8;
+        border-radius: 20px;
+        padding: 60px 25px;
+        text-align: center;
+        position: unset;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+    .detail-2 {
+        position: unset;
+        top: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
 /* CHARGES SECTION  */
 
 .charges {
     background: #F9FAFC;
-    padding: 80px 0;
+    padding: 250px 0 80px;
 }
 
 .charges-wrapper {
@@ -457,7 +512,6 @@ p {
 .charges-detail-4,
 .charges-detail-5 {
     border-right: 1px solid #EFF2F7;
-    width: 145px;
 }
 
 .charges-detail-1,
@@ -470,6 +524,9 @@ p {
 }
 
 @media all and (max-width:991px) {
+    .charges {
+        padding: 80px 0 0;
+    }
     .charges-wrapper {
         width: 100%;
         margin: 0 auto;
