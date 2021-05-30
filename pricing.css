@@ -328,7 +328,7 @@ p {
 }
 
 .charges-wrapper {
-    width: 946px;
+    width: 950px;
     margin: 0 auto;
 }
 
@@ -342,14 +342,58 @@ p {
 
 .charges-content {
     margin-top: 50px;
+    width: 946px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 80px 40px;
 }
 
+.charges-detail>h4,
 .charges-detail>p {
     font-size: 18px;
     line-height: 21px;
     display: flex;
-    align-items: center;
     color: #04004D;
+    padding: 25px;
+}
+
+.charges-detail>p {
+    border-top: 1px solid #EFF2F7;
+}
+
+.charges-detail-1,
+.charges-detail-2,
+.charges-detail-3,
+.charges-detail-4,
+.charges-detail-5 {
+    border-right: 1px solid #EFF2F7;
+    width: 145px;
+}
+
+.charges-detail-1,
+.charges-detail-2,
+.charges-detail-3,
+.charges-detail-4,
+.charges-detail-5,
+.charges-detail-6 {
+    width: 145px;
+}
+
+table {
+    width: 946px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+th {
+    padding: 24px 0;
+}
+
+td {
+    border-top: 1px solid #EFF2F7;
+    padding: 24px 0;
 }
 
 
