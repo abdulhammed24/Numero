@@ -452,17 +452,21 @@ p {
 
 /* DETAIL SECTION */
 
+.detail {
+    padding: 150px 0 120px;
+}
+
 .detail-wrapper {
     background: #F9FAFC;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .detail-text {
     width: 670px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 0 0 80px;
 }
 
 .detail-text>p {
@@ -512,7 +516,7 @@ p {
 
 .answer {
     width: 975px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     background: #F5F2FD;
     border-radius: 20px;
     display: flex;
